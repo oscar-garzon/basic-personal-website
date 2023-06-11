@@ -129,9 +129,13 @@ html {
     /* display: flex; */
 }
 
-img.small {
-    width: 140px;
-    height: 140px;
+img {
+    border-radius:75%;
+}
+
+img.medium {
+    width: 240px;
+    height: 240px;
 }
 
 img.align-rigth {
