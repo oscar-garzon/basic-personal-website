@@ -22,11 +22,12 @@ code {
 }
 
 html {
-    font-size: 62.5%;
+    /* font-size: 62.5%; */
 } 
 
 .header {
     border-bottom: 1px solid #E2E8F0;
+    margin-bottom: 2em;
 }
 
 .navbar {
@@ -46,15 +47,15 @@ html {
 }
 
 .nav-link {
-    font-size: 1.6rem;
+    font-size: 1.0rem;
     font-weight: 400;
     color: #475569;;
 }
 
 .nav-logo {
-    font-size: 2.1rem;
+    font-size: 1.4rem;
     font-weight: 500;
-    color: #2fddf7;
+    color: ##022125;
 }
 
 .hamburger {
