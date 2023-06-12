@@ -16,7 +16,7 @@ code {
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap'); */
 
 * {
-    margin: .3em;
+    margin: 0em;
     padding: 0;
     box-sizing: border-box;
 }
@@ -24,6 +24,9 @@ code {
 .header {
     border-bottom: 1px solid #E2E8F0;
     margin-bottom: 2em;
+    background-color: #00000014;
+    width: 100%;
+    padding: 0.6em;
 }
 
 .navbar {
@@ -49,7 +52,7 @@ code {
 }
 
 .nav-logo {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #022125;
 }
@@ -120,6 +123,7 @@ code {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* min-height: 100vh; */
 }
 
 .banner-info {
@@ -139,20 +143,53 @@ code {
     height: 40px;
 }
 
-.aboutMe {
+.projects-container {
+    display: grid;
+    grid-template-areas: 
+    "p1"
+    "p2"
+    "p3"
+    "p4"
+    "p5";
+    gap: 20px;
+    background-color: #fff;
+    margin: 0.7em;
+}
+
+.project-photo {
+    width: 240px;
+    height: 180px;
+}
+
+.project-item-container {
+    font-size: 1.2em;
+    background-color: #fffafa;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.aboutMeInfo {
-    flex: 3;
+#project1 {
+    grid-area: p1;
 }
 
-.aboutMePhoto{
-    flex: 1;
-    /* display: flex; */
+#project2 {
+    grid-area: p2;
 }
 
-img {
+#project3 {
+    grid-area: p3;
+}
+
+#project4 {
+    grid-area: p4;
+}
+
+#project5 {
+    grid-area: p5;
+}
+
+img.circular {
     border-radius:75%;
 }
 
@@ -171,7 +208,7 @@ a {
     color: black;
 }
 
-a:hover {
+.navbar a:hover {
     color: #0000008c;
 }
 
@@ -181,4 +218,18 @@ h2 {
 
 li {
     list-style-type: none;
+}
+
+hr {
+    margin: 4em 0 3em;
+}
+
+@media (min-width: 700px) {
+    .projects-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "p1 p2"
+            "p3 p4"
+            "p5 .";
+    }
 }
