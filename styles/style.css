@@ -138,6 +138,12 @@ code {
     font-style: italic;
 }
 
+.me-subdescription {
+    padding: 2em 1em 0.2em;
+    font-weight: normal;
+    font-style: italic;
+}
+
 .icons {
     width: 40px;
     height: 40px;
@@ -146,6 +152,7 @@ code {
 .projects-container {
     display: grid;
     grid-template-areas: 
+    "p0"
     "p1"
     "p2"
     "p3"
@@ -167,6 +174,16 @@ code {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.project-item-photo {
+    display: flex;
+    justify-content: center;
+}
+
+#project-title {
+    grid-area: p0;
+    font-size: 2em;
 }
 
 #project1 {
@@ -228,6 +245,7 @@ hr {
     .projects-container {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
+            "p0 p0"
             "p1 p2"
             "p3 p4"
             "p5 .";
