@@ -1,0 +1,5 @@
+
+.quote-style li{
+    list-style-type: disc;
+    margin: 1em 2em;
+}
